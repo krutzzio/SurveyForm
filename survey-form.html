@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <link  href="styles.css" rel="stylesheet"/>
+    <title>Survey Form</title>
+
+  </head> 
+  <body>
+    <div>
+    <h1 id="title" class="header">Survey Form</h1>
+    <p class="header" id="description">Please refil the following survey. Thank you</p>
+
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name">Nickname: <input id="name" type="text" placeholder="Pepito" required></label>
+      <label id="email-label" for="name">Enter your email: <input id="email" type="email" placeholder="pepito@domain.org" required></label>
+      <label id="password-label" for="password">Password: <input id="password" type="password" pattern="[a-z0-5]{8,}" placeholder="***" required></label>
+      
+      <p>Select your gender:<p>
+      <label for="male-gender"><input id="male-gender" type="radio" value="male-gender" name="gender-type" /> Male</label>
+      <label for="female-gender"><input id="female-gender" type="radio" value="female-gender" name="gender-type" /> Female</label>
+      <label for="other-gender"><input id="other-gender" type="radio" value="other-gender" name="gender-type" /> Other</label>
+      </fieldset>
+
+
+      <label id="number-label" for="number">Do you like this survey? (1-No/10-Yes) <input id="number" type="number" min="1" max="10" placeholder="5" required></label>
+     
+      
+      <label id="dropdown-label" for="dropdown">Chose the most funny phrase:
+         <select id="dropdown" ">
+           <option value="" disabled selected hidden>(select)</option>
+           <option value="1">banana red</option>
+           <option value="2">aafro ninga</option>
+           <option value="3">mamahuebo glugluglu</option>
+         </select>
+      </label>
+      
+      <p>Chose the correct ones:<p>
+      <label for="tu-madre"><input name="tu-madre" value="tu-madre" type="checkbox"  /> Tumadretieneunapolla</label>
+      <label for="quisiera"><input name="quisiera" value="quisiera" type="checkbox"  /> ya la quisiera yoo</label>
+      <label for="tu-padre"><input name="tu-padre" value="tu-padre" type="checkbox"  /> pena por tu padre</label>
+
+      <label for="opinion">Opinion? <textarea name="opinion" id="opinion" placeholder="Dilo..."></textarea></label>
+      
+
+      <label for="submit"><button type="submit" id="submit">Submit</button></label>
+    </div>
+  </body>
+  </html>
