@@ -44,12 +44,16 @@ label{
 
 input, textarea, select{
   margin-top: 5px;
-  width: 100%;
+  width: 95%;
   height: 7%;
-  padding: 2% -1% 2% 2%;
+  padding: 2% 2% 2% 2%;
   border-radius: 15px;
   border: 1px solid rgb(210, 203, 203);
   vertical-align: middle;
+}
+
+select{
+  width: 100%;
 }
 
 textarea{
